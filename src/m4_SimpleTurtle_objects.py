@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -130,7 +130,7 @@ natasha.left(90)
 natasha.forward(10)
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -154,8 +154,8 @@ natasha.forward(10)
 #   As always, test by running the module.
 #
 ###############################################################################
-nick=rg.SimpleTurtle('turtle')
-nick.pen=rg.Pen('blue','15')
+nick = rg.SimpleTurtle('turtle')
+nick.pen = rg.Pen('blue', '15')
 nick.forward(50)
 nick.right(90)
 nick.forward(50)
@@ -166,7 +166,7 @@ nick.forward(50)
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
