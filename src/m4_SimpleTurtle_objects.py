@@ -154,6 +154,15 @@ natasha.forward(10)
 #   As always, test by running the module.
 #
 ###############################################################################
+nick=rg.SimpleTurtle('turtle')
+nick.pen=rg.Pen('blue','15')
+nick.forward(50)
+nick.right(90)
+nick.forward(50)
+nick.right(90)
+nick.forward(50)
+nick.right(90)
+nick.forward(50)
 
 ###############################################################################
 #
