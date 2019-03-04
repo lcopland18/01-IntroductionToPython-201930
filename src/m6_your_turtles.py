@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
+         Aaron Wilkin, their colleagues, and Lauren Copland.
 """
 ########################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
@@ -28,3 +28,35 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+
+import rosegraphics as rg
+susan = rg.SimpleTurtle('turtle')
+susan.pen = rg.Pen('red',20)
+susan.speed = 20
+susansize = 150
+
+alex = rg.SimpleTurtle('turtle')
+alex.pen = rg.Pen('orange',10)
+alex.speed = 10
+alexsize = 100
+
+#susan.draw_regular_polygon(6, 100)
+
+#susan.forward(100)
+#alex.right(180)
+#alex.forward(100)
+
+for k in range(10):
+    susan.draw_regular_polygon(6, susansize)
+    susan.pen_up()
+    susan.right(90)
+    susan.forward(20)
+    susan.pen_down()
+    susansize = susansize-10
+
+for k in range(4):
+    alex.draw_square(alexsize)
+    alex.pen_up()
+    alex.left(90)
+    alex.forward(100)
+    alex.pen_down()
